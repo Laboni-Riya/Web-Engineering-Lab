@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Shop With Me</title>
+</head>
+<body>
+  <nav class="navi">
+    <h1 class="head1">Shop With Me</h1>
+    <div><a href="#" class="Account">Account</a></div>
+    <ul class="nav-list">
+      <li class="dropdown">
+        <a href="#">Items</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Fruits</a></li>
+          <li><a href="#">Milk Shake</a></li>
+          <li><a href="#">Coffee</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Offers</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Fam Pack</a></li>
+          <li><a href="#">Iftar!</a></li>
+          <li><a href="#">Offer%</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="search-container">
+      <input type="search" placeholder="Type Anything" />
+      <button id="searchbutton">Search</button>
+      <div class="cart-container">
+        <i class="fa-solid fa-cart-shopping">
+          <span id="cart-count">0</span>
+        </i>
+      </div>
+  </nav>
+
+  <!-- Cart Sidebar -->
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="close-cart">&times;</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <p>Your cart is empty.</p>
+    </div>
+    <div class="cart-footer">
+      <strong>Total: </strong><span id="cart-total">0 TK</span>
+    </div>
+  </div>
+  
+  <!-- Overlay behind sidebar -->
+  <div id="overlay" class="overlay"></div>
+  
+
+  <section class="hero-banner">
+    <div class="hero-content">
+      <h2>🔥Big Discount Week! Up to 40% Off!🔥</h2>
+      <p>Limited time offer. Hurry before it is gone!</p>
+      <button class="shop-now-btn">Shop Now</button>
+    </div>
+  </section>
+  
+
+  <section class="sec">
+    <div class="grid1">
+      <div class="card">
+        <img src="https://www.allrecipes.com/thmb/jYmw-0Vijg1E_OuG2yGjEAcdQg4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ar-new-banana-adobe-ar-4x3-d8f0871e12214350be7ae5575eea4eed.jpg" alt="Banana">
+        <div class="price-section">
+          <span class="old-price">30 TK</span>
+          <span class="new-price">24 TK</span>
+          <span class="discount">-20%</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://www.collinsdictionary.com/images/full/strawberry_227472010.jpg" alt="Strawberry">
+        <div class="price-section">
+          <span class="old-price">36 TK</span>
+          <span class="new-price">29 TK</span>
+          <span class="discount">-19%</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://assets.clevelandclinic.org/m/5846d1f42f48ff09/webimage-Apples-184940975-770x533-1_jpg.png" alt="Apple">
+        <div class="price-section">
+          <span class="old-price">25 TK</span>
+          <span class="new-price">19 TK</span>
+          <span class="discount">-24%</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <img src="https://scitechdaily.com/images/Sliced-Watermelon.jpg" alt="Watermelon">
+        <div class="price-section">
+          <span class="old-price">42 TK</span>
+          <span class="new-price">34 TK</span>
+          <span class="discount">-19%</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="fot">
+    <p>Thank you for watching</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
